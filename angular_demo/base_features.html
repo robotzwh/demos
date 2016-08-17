@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Basic Fetures</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript">
+        angular.module("featuresShow", [])
+                .controller("features", function ($scope) {
+                    $scope.firstName = "edward";
+                    $scope.secondName = "zhao";
+                });
+    </script>
+</head>
+<body ng-app="featuresShow">
+<div ng-controller="features">
+    <span>fullName:{{firstName+" "+secondName|uppercase}}</span><br/>
+    <span><input type="text" ng-model="firstName"> </span><br/>
+    <span><input type="text" ng-model="secondName"> </span><br/>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Hi My Friends</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            filter:<input type="text" ng-model="filterText">
+        </div>
+        <div class="col-lg-4">
+            颜王:{{$ctrl.getNameOfYanWang()}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <friends-list list="friends|filter:filterText" on-update="$ctrl.onUpdate(id,yanZhi)"></friends-list>
+        </div>
+    </div>
+</div>

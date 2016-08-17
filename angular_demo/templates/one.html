@@ -1,0 +1,10 @@
+<div>
+    <span>{{$ctrl.friend.name}}</span><br/>
+    <div ng-switch="$ctrl.model">
+        <input ng-switch-when="true" type="number" ng-model="$ctrl.yanzhi"/>
+        <span ng-switch-default>{{$ctrl.yanzhi}}</span>
+    </div>
+    <div>
+        <button ng-click="$ctrl.modelSwitch()">{{$ctrl.model?"save":"edit"}}</button>
+    </div>
+</div>
