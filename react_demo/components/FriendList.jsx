@@ -10,7 +10,7 @@ export default class FriendList extends React.Component{
         }
         return (
 
-              <div class="list-group">
+              <div className="list-group">
                 {lists}
               </div>
         )
