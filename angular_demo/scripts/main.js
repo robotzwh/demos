@@ -36,6 +36,31 @@ app.component("fMain", {
                 id: 6,
                 name: "silasxu",
                 yanzhi: 100
+            },
+			{
+                id: 7,
+                name: "jason",
+                yanzhi: 100
+            },
+			{
+                id: 8,
+                name: "xuyi",
+                yanzhi: 100
+            },
+			{
+                id: 9,
+                name: "ethan",
+                yanzhi: 100
+            },
+			{
+                id: 10,
+                name: "nought",
+                yanzhi: 100
+            },
+			{
+                id: 11,
+                name: "neowang",
+                yanzhi: 100
             }
         ];
         ctrl.onUpdate = function (id, yanZhi) {
